@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Displaying Scrapped Data</title>
+{% endblock %}
+
+{% block body %}
+<center>
+<h2 >Recommendations</h2>
+<div class="recommended-movies">
+{% for movie in movies %}
+  <h2>{{movie}}</h2>
+{% endfor %}
+</div>
+</center>
+{% endblock %}
