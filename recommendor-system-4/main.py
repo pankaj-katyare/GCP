@@ -16,6 +16,7 @@ from collections import OrderedDict
 import itertools
 
 df = pd.read_csv("movie_dataset.csv")
+#df = pd.read_csv("gs://movie_dataset/movie_dataset.csv")
 features = ['keywords','cast','genres','director']
 def combine_features(row):
     return row['keywords'] +" "+row['cast']+" "+row["genres"]+" "+row["director"]
